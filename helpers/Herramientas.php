@@ -1,11 +1,17 @@
 <?php
-
 /**
  * Creado con PhpStorm.
  * patronesdiseno
  * Desarrollador: Alejandro Sosa
  * Fecha: 3/10/2016
  * Hora: 22:41
+ */
+
+namespace Helpers;
+
+/**
+ * Class Herramientas
+ * @package Helpers
  */
 class Herramientas
 {
@@ -15,11 +21,27 @@ class Herramientas
     private static $out_charset;
     private static $out_handle;
 
+    public static function demo()
+    {
+        echo 'hola';
+    }
+
+    /**
+     * Verifica si string empieza con substring
+     * @param $haystack
+     * @param $needle
+     * @return bool
+     */
     public static function str_start_with($haystack, $needle)
     {
         return ($needle === '') || (strpos($haystack, $needle) === 0);
     }
 
+    /**
+     * Metodo de entrada en consola
+     * @param string $prompt
+     * @return string
+     */
     public static function readln($prompt = '')
     {
         if(PHP_OS == 'WINNT') {
@@ -38,6 +60,10 @@ class Herramientas
         return $line;
     }
 
+    /**
+     * Metodo para imprimir en consol
+     * @param string $str
+     */
     public static function prt($str = '')
     {
         if($str != ''){
@@ -59,11 +85,18 @@ class Herramientas
         }
     }
 
+    /**
+     * Imprime en consola
+     * @param string $str
+     */
     public static function println($str = '')
     {
         Herramientas::prt($str . "\n");
     }
 
+    /**
+     * Detectar charset
+     */
     private static function detectCharset()
     {
         if(!isset(Herramientas::$out_charset)){

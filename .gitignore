@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+.idea/
+tests/_output/*
+/web/php_errors.log
+/php_errors.log
+composer.lock
+vendor/

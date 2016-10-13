@@ -7,10 +7,14 @@
  * Hora: 19:41
  */
 
-namespace Ofertaski;
+namespace Clases\abstractas;
 
-require_once "AnunciosImp.php";
+use Clases\interfaces\AnunciosImp;
 
+/**
+ * Class GestionAnuncios
+ * @package Clases\abstractas
+ */
 abstract class GestionAnuncios
 {
     /**
@@ -28,11 +32,27 @@ abstract class GestionAnuncios
      */
     protected $implementacion;
 
+    /**
+     * GestionAnuncios constructor.
+     * @param AnunciosImp $implementacion
+     */
     public function __construct(AnunciosImp $implementacion)
     {
         $this->implementacion = $implementacion;
     }
 
+    /**
+     * Crear anuncio
+     * @param $modelo
+     * @return mixed
+     */
     abstract public function crearAnuncio($modelo);
+
+    /**
+     * Editar anuncio
+     * @param $id
+     * @param $modelo
+     * @return mixed
+     */
     abstract public function editarAnuncio($id, $modelo);
 }

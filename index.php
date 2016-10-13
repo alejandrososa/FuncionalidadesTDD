@@ -7,13 +7,28 @@
  * Hora: 20:55
  */
 
-namespace Ofertaski;
+namespace Funcionalidades;
 
-use Ofertaski\FormularioArticulo;
-require_once "Herramientas.php";
-require_once "FormularioArticulo.php";
-require_once "ArticulosImp.php";
-require_once "OfertasImp.php";
+require_once __DIR__.'/vendor/autoload.php';
+
+use Helpers\Herramientas;
+use Clases\concretas\FormularioArticulo;
+use Clases\implementaciones\ArticulosImp;
+use Clases\implementaciones\OfertasImp;
+
 
 $formArticulo = new FormularioArticulo(new ArticulosImp());
-$formArticulo->crearAnuncio('lavadora');
+$result = $formArticulo->crearAnuncio('lavadora');
+echo '<pre>';print_r([__LINE__, 'Resultado crear anuncio',$result]);
+
+$anuncios = new FormularioArticulo(new ArticulosImp());
+$result = $anuncios->editarAnuncio(5,'lavadora');
+echo '<pre>';print_r([__LINE__, 'Resultado editar anuncio',$result]);
+
+$anuncios = new FormularioArticulo(new OfertasImp());
+$result = $anuncios->crearAnuncio('Fin de semana en crucero atlantis');
+echo '<pre>';print_r([__LINE__, 'Resultado crear anuncio',$result]);
+
+$anuncios = new FormularioArticulo(new OfertasImp());
+$result = $anuncios->editarAnuncio(1,'Cena en Wooks para 2');
+echo '<pre>';print_r([__LINE__, 'Resultado editar anuncio',$result]);

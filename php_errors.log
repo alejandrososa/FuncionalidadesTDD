@@ -1,0 +1,10 @@
+[13-Oct-2016 21:22:22 Europe/Madrid] PHP Warning:  require_once(/Users/grace/Sites/FuncionalidadesOfertaski/web/vendor/autoload.php): failed to open stream: No such file or directory in /Users/grace/Sites/FuncionalidadesOfertaski/web/index.php on line 12
+[13-Oct-2016 21:22:22 Europe/Madrid] PHP Stack trace:
+[13-Oct-2016 21:22:22 Europe/Madrid] PHP   1. {main}() /Users/grace/Sites/FuncionalidadesOfertaski/web/index.php:0
+[13-Oct-2016 21:22:22 Europe/Madrid] PHP Fatal error:  require_once(): Failed opening required '/Users/grace/Sites/FuncionalidadesOfertaski/web/vendor/autoload.php' (include_path='.:/php/includes') in /Users/grace/Sites/FuncionalidadesOfertaski/web/index.php on line 12
+[13-Oct-2016 21:22:22 Europe/Madrid] PHP Stack trace:
+[13-Oct-2016 21:22:22 Europe/Madrid] PHP   1. {main}() /Users/grace/Sites/FuncionalidadesOfertaski/web/index.php:0
+[13-Oct-2016 21:23:41 Europe/Madrid] PHP Catchable fatal error:  Argument 1 passed to Clases\concretas\FormularioArticulo::__construct() must be an instance of Clases\interfaces\AnunciosImp, none given, called in /Users/grace/Sites/FuncionalidadesOfertaski/index.php on line 21 and defined in /Users/grace/Sites/FuncionalidadesOfertaski/Clases/concretas/FormularioArticulo.php on line 25
+[13-Oct-2016 21:23:41 Europe/Madrid] PHP Stack trace:
+[13-Oct-2016 21:23:41 Europe/Madrid] PHP   1. {main}() /Users/grace/Sites/FuncionalidadesOfertaski/index.php:0
+[13-Oct-2016 21:23:41 Europe/Madrid] PHP   2. Clases\concretas\FormularioArticulo->__construct() /Users/grace/Sites/FuncionalidadesOfertaski/index.php:21

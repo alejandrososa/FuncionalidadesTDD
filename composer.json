@@ -1,0 +1,24 @@
+{
+  "name": "appas/patrones-diseno-tdd",
+  "description": "Prueba de TDD con Codeception",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Alejandro Sosa",
+      "email": "alesjohnson@hotmail.com"
+    }
+  ],
+  "require": {
+    "codeception/codeception": "2.2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clases\\abstractas\\": "Clases/abstractas/",
+      "Clases\\concretas\\": "Clases/concretas/",
+      "Clases\\implementaciones\\": "Clases/implementaciones/",
+      "Clases\\interfaces\\": "Clases/interfaces/",
+      "Helpers\\": "Helpers/"
+    }
+  }
+}

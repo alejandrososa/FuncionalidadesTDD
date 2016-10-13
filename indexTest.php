@@ -7,16 +7,18 @@
  * Hora: 21:58
  */
 
-namespace Ofertaski;
+namespace Clases\tests;
 
-require_once "AnunciosImp.php";
-require_once "FormularioArticulo.php";
-require_once "FormularioOferta.php";
-require_once "ArticulosImp.php";
-require_once "OfertasImp.php";
+use Clases\concretas\FormularioArticulo;
+use Clases\concretas\FormularioOferta;
+use Clases\implementaciones\ArticulosImp;
+use Clases\implementaciones\OfertasImp;
 
-
-class AnunciosTest extends \PHPUnit_Framework_TestCase
+/**
+ * Class indexTest
+ * @package Clases\tests
+ */
+class indexTest extends \PHPUnit_Framework_TestCase
 {
     public function testAnunciosImpPuedeCrearArticulos()
     {
