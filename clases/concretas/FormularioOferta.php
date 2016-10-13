@@ -8,10 +8,10 @@
  */
 
 
-namespace Clases\concretas;
+namespace clases\concretas;
 
-use Clases\abstractas\GestionAnuncios;
-use Clases\interfaces\AnunciosImp;
+use clases\abstractas\GestionAnuncios;
+use clases\interfaces\AnunciosImp;
 
 /**
  * Class FormularioOferta

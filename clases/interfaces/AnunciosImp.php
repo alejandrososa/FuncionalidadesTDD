@@ -7,11 +7,11 @@
  * Hora: 20:36
  */
 
-namespace Clases\interfaces;
+namespace clases\interfaces;
 
 /**
  * Interface AnunciosImp
- * @package Clases\interfaces
+ * @package clases\interfaces
  */
 interface AnunciosImp
 {

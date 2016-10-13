@@ -7,16 +7,16 @@
  * Hora: 21:58
  */
 
-namespace Clases\tests;
+namespace clases\tests;
 
-use Clases\concretas\FormularioArticulo;
-use Clases\concretas\FormularioOferta;
-use Clases\implementaciones\ArticulosImp;
-use Clases\implementaciones\OfertasImp;
+use clases\concretas\FormularioArticulo;
+use clases\concretas\FormularioOferta;
+use clases\implementaciones\ArticulosImp;
+use clases\implementaciones\OfertasImp;
 
 /**
  * Class indexTest
- * @package Clases\tests
+ * @package clases\tests
  */
 class indexTest extends \PHPUnit_Framework_TestCase
 {

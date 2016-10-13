@@ -14,11 +14,11 @@
   },
   "autoload": {
     "psr-4": {
-      "Clases\\abstractas\\": "Clases/abstractas/",
-      "Clases\\concretas\\": "Clases/concretas/",
-      "Clases\\implementaciones\\": "Clases/implementaciones/",
-      "Clases\\interfaces\\": "Clases/interfaces/",
-      "Helpers\\": "Helpers/"
+      "clases\\abstractas\\": "Clases/abstractas/",
+      "clases\\concretas\\": "Clases/concretas/",
+      "clases\\implementaciones\\": "Clases/implementaciones/",
+      "clases\\interfaces\\": "Clases/interfaces/",
+      "helpers\\": "Helpers/"
     }
   }
 }

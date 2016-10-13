@@ -7,14 +7,14 @@
  * Hora: 19:25
  */
 
-namespace Clases\implementaciones;
+namespace clases\implementaciones;
 
-use Helpers\Herramientas;
-use Clases\interfaces\AnunciosImp;
+use helpers\Herramientas;
+use clases\interfaces\AnunciosImp;
 
 /**
  * Class ArticulosImp
- * @package Clases\implementaciones
+ * @package clases\implementaciones
  */
 class ArticulosImp implements AnunciosImp
 {

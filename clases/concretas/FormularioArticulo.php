@@ -7,14 +7,14 @@
  * Hora: 20:08
  */
 
-namespace Clases\concretas;
+namespace clases\concretas;
 
-use Clases\abstractas\GestionAnuncios;
-use Clases\interfaces\AnunciosImp;
+use clases\abstractas\GestionAnuncios;
+use clases\interfaces\AnunciosImp;
 
 /**
  * Class FormularioArticulo
- * @package Clases\concretas
+ * @package clases\concretas
  */
 class FormularioArticulo extends GestionAnuncios
 {

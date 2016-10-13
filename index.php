@@ -11,10 +11,10 @@ namespace Funcionalidades;
 
 require_once __DIR__.'/vendor/autoload.php';
 
-use Helpers\Herramientas;
-use Clases\concretas\FormularioArticulo;
-use Clases\implementaciones\ArticulosImp;
-use Clases\implementaciones\OfertasImp;
+use helpers\Herramientas;
+use clases\concretas\FormularioArticulo;
+use clases\implementaciones\ArticulosImp;
+use clases\implementaciones\OfertasImp;
 
 
 $formArticulo = new FormularioArticulo(new ArticulosImp());

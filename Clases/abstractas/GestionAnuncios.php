@@ -7,13 +7,13 @@
  * Hora: 19:41
  */
 
-namespace Clases\abstractas;
+namespace clases\abstractas;
 
-use Clases\interfaces\AnunciosImp;
+use clases\interfaces\AnunciosImp;
 
 /**
  * Class GestionAnuncios
- * @package Clases\abstractas
+ * @package clases\abstractas
  */
 abstract class GestionAnuncios
 {

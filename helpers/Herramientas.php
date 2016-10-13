@@ -11,7 +11,7 @@ namespace Helpers;
 
 /**
  * Class Herramientas
- * @package Helpers
+ * @package helpers
  */
 class Herramientas
 {
